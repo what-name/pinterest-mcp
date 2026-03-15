@@ -124,7 +124,7 @@ app.get("/", (c) => {
       <p>Connect your MCP client to <code>${new URL("/mcp", c.req.url).href}</code></p>
       <p style="margin-top: 40px; color: #888; font-size: 14px;">
         Built by <a href="https://bylark.art">by Lark</a> |
-        <a href="https://github.com/chrisnagy/pinterest-mcp">Source on GitHub</a>
+        <a href="https://github.com/what-name/pinterest-mcp">Source on GitHub</a>
       </p>
     </body>
     </html>
