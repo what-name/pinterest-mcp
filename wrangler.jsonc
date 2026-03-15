@@ -1,0 +1,34 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pinterest-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "migrations": [
+    {
+      "new_sqlite_classes": ["PinterestMCP"],
+      "tag": "v1"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "PinterestMCP",
+        "name": "MCP_OBJECT"
+      }
+    ]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "OAUTH_KV",
+      "id": "3855a7b672614da0adc30a62f6784daf"
+    }
+  ],
+  "dev": {
+    "port": 8788
+  }
+  // Secrets (set via `wrangler secret put`):
+  // PINTEREST_CLIENT_ID
+  // PINTEREST_CLIENT_SECRET
+  // COOKIE_ENCRYPTION_KEY
+}

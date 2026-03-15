@@ -1,0 +1,23 @@
+{
+  "name": "pinterest-mcp",
+  "version": "0.1.0",
+  "description": "Full-coverage Pinterest API v5 MCP server. Create pins, manage boards, research keywords, track analytics.",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^0.2.3",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "agents": "^0.5.0",
+    "hono": "^4.12.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260227.0",
+    "typescript": "5.9.3",
+    "wrangler": "^4.67.0"
+  }
+}
